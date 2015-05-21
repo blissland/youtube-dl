@@ -26,7 +26,7 @@ class AftonbladetIE(InfoExtractor):
         # find internal video meta data
         meta_url = 'http://aftonbladet-play.drlib.aptoma.no/video/%s.json'
         internal_meta_id = self._html_search_regex(
-            r'data-aptomaId="([\w\d]+)"', webpage, 'internal_meta_id')
+            r'videoId&quot;:&quot;([^&]+)', webpage, 'internal_meta_id')
         internal_meta_url = meta_url % internal_meta_id
         internal_meta_json = self._download_json(
             internal_meta_url, video_id, 'Downloading video meta data')
