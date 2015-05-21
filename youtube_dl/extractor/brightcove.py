@@ -65,31 +65,6 @@ class BrightcoveIE(InfoExtractor):
             },
         },
         {
-            # test that the default referer works
-            # from http://national.ballet.ca/interact/video/Lost_in_Motion_II/
-            'url': 'http://link.brightcove.com/services/player/bcpid756015033001?bckey=AQ~~,AAAApYJi_Ck~,GxhXCegT1Dp39ilhXuxMJxasUhVNZiil&bctid=2878862109001',
-            'info_dict': {
-                'id': '2878862109001',
-                'ext': 'mp4',
-                'title': 'Lost in Motion II',
-                'description': 'md5:363109c02998fee92ec02211bd8000df',
-                'uploader': 'National Ballet of Canada',
-            },
-        },
-        {
-            # test flv videos served by akamaihd.net
-            # From http://www.redbull.com/en/bike/stories/1331655643987/replay-uci-dh-world-cup-2014-from-fort-william
-            'url': 'http://c.brightcove.com/services/viewer/htmlFederated?%40videoPlayer=ref%3ABC2996102916001&linkBaseURL=http%3A%2F%2Fwww.redbull.com%2Fen%2Fbike%2Fvideos%2F1331655630249%2Freplay-uci-fort-william-2014-dh&playerKey=AQ%7E%7E%2CAAAApYJ7UqE%7E%2Cxqr_zXk0I-zzNndy8NlHogrCb5QdyZRf&playerID=1398061561001#__youtubedl_smuggle=%7B%22Referer%22%3A+%22http%3A%2F%2Fwww.redbull.com%2Fen%2Fbike%2Fstories%2F1331655643987%2Freplay-uci-dh-world-cup-2014-from-fort-william%22%7D',
-            # The md5 checksum changes on each download
-            'info_dict': {
-                'id': '2996102916001',
-                'ext': 'flv',
-                'title': 'UCI MTB World Cup 2014: Fort William, UK - Downhill Finals',
-                'uploader': 'Red Bull TV',
-                'description': 'UCI MTB World Cup 2014: Fort William, UK - Downhill Finals',
-            },
-        },
-        {
             # playlist test
             # from http://support.brightcove.com/en/video-cloud/docs/playlist-support-single-video-players
             'url': 'http://c.brightcove.com/services/viewer/htmlFederated?playerID=3550052898001&playerKey=AQ%7E%7E%2CAAABmA9XpXk%7E%2C-Kp7jNgisre1fG5OdqpAFUTcs0lP_ZoL',
