@@ -55,7 +55,6 @@ class OoyalaBaseIE(InfoExtractor):
                 mobile_player, 'info', fatal=False, default=None)
             if videos_info:
                 break
-
         if not videos_info:
             formats = []
             auth_data = self._download_json(
@@ -75,7 +74,6 @@ class OoyalaBaseIE(InfoExtractor):
                     'abr': int_or_none(stream.get('audio_bitrate')),
                     'vbr': int_or_none(stream.get('video_bitrate')),
                 })
-            if formats:
                 return {
                     'id': video_id,
                     'formats': formats,
