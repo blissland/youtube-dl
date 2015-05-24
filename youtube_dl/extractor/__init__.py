@@ -244,6 +244,7 @@ from .kaltura import KalturaIE
 from .kanalplay import KanalPlayIE
 from .kankan import KankanIE
 from .karaoketv import KaraoketvIE
+from .karrierevideos import KarriereVideosIE
 from .keezmovies import KeezMoviesIE
 from .khanacademy import KhanAcademyIE
 from .kickstarter import KickStarterIE
@@ -338,8 +339,7 @@ from .newstube import NewstubeIE
 from .nextmedia import (
     NextMediaIE,
     NextMediaActionNewsIE,
-    AppleDailyRealtimeNewsIE,
-    AppleDailyAnimationNewsIE
+    AppleDailyIE,
 )
 from .nfb import NFBIE
 from .nfl import NFLIE
